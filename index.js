@@ -17,6 +17,7 @@ const demo_server = http.createServer(function(request, response) {
      const product = multiplication.multiply(input_numbers)
       response.writeHead(200, {'Content-Type': 'text/html'})
       response.end('Result: ' + product)
+      console.log("")
     })
   } else {
     var html = `
